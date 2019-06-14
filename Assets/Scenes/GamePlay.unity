@@ -245,6 +245,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1621357530089703519, guid: a1b478b807e0b6941baed2d72703cf25,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.97108
+      objectReference: {fileID: 0}
     - target: {fileID: 1621357530089703518, guid: a1b478b807e0b6941baed2d72703cf25,
         type: 3}
       propertyPath: m_Sprite
@@ -254,6 +259,11 @@ PrefabInstance:
     - target: {fileID: 1621357530089703518, guid: a1b478b807e0b6941baed2d72703cf25,
         type: 3}
       propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1621357530414197768, guid: a1b478b807e0b6941baed2d72703cf25,
+        type: 3}
+      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
