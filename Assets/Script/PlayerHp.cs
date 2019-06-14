@@ -27,8 +27,9 @@ public class PlayerHp : MonoBehaviour
         {
             stock -= 1;
             hpbar = 100;
+            healthSilider.value = hpbar;
 
-           // UnityEditor.EditorApplication.isPlaying = false;
+            // UnityEditor.EditorApplication.isPlaying = false;
         }
         if(stock <=0)
         {
