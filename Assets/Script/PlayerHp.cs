@@ -56,4 +56,8 @@ public class PlayerHp : MonoBehaviour
     {
         SceneManager.LoadScene("GameOver");
     }
+    public int Getstock()
+    {
+        return stock;
+    }
 }
