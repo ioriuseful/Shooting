@@ -26,10 +26,17 @@ public class PlayerHp : MonoBehaviour
         if(hpbar<=0)
         {
             stock -= 1;
+<<<<<<< HEAD
             if(stock>=0)
             {
                 hpbar = 100;
             }
+=======
+            hpbar = 100;
+            healthSilider.value = hpbar;
+
+            // UnityEditor.EditorApplication.isPlaying = false;
+>>>>>>> df249669d7dd23ef43d175c9117e1d542f800cfa
         }
         if(stock <0)
         {
@@ -56,5 +63,9 @@ public class PlayerHp : MonoBehaviour
     void Shift()
     {
         SceneManager.LoadScene("GameOver");
+    }
+    public int Getstock()
+    {
+        return stock;
     }
 }
