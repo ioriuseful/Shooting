@@ -24,12 +24,13 @@ public class PlayerHp : MonoBehaviour
     void Update()
     {
         Debug.Log(hpbar);
-        if(hpbar<=0)
+        if(hpbar<1)
         {
             stock -= 1;
             hpbar = 100;
+            healthSilider.value = hpbar;
 
-           // UnityEditor.EditorApplication.isPlaying = false;
+            // UnityEditor.EditorApplication.isPlaying = false;
         }
         if(stock <=0)
         {

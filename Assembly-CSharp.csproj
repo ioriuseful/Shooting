@@ -53,8 +53,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Emitter.cs" />
+     <Compile Include="Assets\Scenes\CutinScript.cs" />
      <Compile Include="Assets\Script\BulletMove.cs" />
+     <Compile Include="Assets\Script\Emitter.cs" />
      <Compile Include="Assets\Script\EndButton.cs" />
      <Compile Include="Assets\Script\EnemyHealth.cs" />
      <Compile Include="Assets\Script\EnemyManager.cs" />
