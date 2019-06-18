@@ -7,6 +7,16 @@ public class PlayerMove : MonoBehaviour
     public float speed;
     Vector3 movement;
     Rigidbody playerRigidbody;
+<<<<<<< HEAD
+
+    Plane plane = new Plane();
+    float distance = 0;
+    //int floorMask;
+    //float camRayLength = 100f;
+
+
+=======
+>>>>>>> 9e5cefa51671b1c8f95f91fd4205141f438e5743
     // Start is called before the first frame update
     void Start()
     {   
@@ -19,7 +29,26 @@ public class PlayerMove : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
         PlayerMovement(h, v);
+<<<<<<< HEAD
+
+        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        plane.SetNormalAndPosition(Vector3.up, transform.localPosition);
+        if(plane.Raycast(ray,out distance))
+        {
+            var lookPoint = ray.GetPoint(distance);
+            transform.LookAt(lookPoint);
+        }
+
+        //var screenPos = Camera.main.WorldToScreenPoint(transform.position);
+        //var direction = Input.mousePosition - screenPos;
+
+        //var angle = GetAim(Vector3.zero, direction);
+        //transform.SetLocalEulerAnglesY(-angle + 90);
+
+
+=======
        
+>>>>>>> 9e5cefa51671b1c8f95f91fd4205141f438e5743
     }
     void PlayerMovement(float h, float v)
     {
@@ -27,4 +56,30 @@ public class PlayerMove : MonoBehaviour
         movement = movement.normalized * speed * Time.deltaTime;
         playerRigidbody.MovePosition(transform.position + movement);
     }
+<<<<<<< HEAD
+
+    //void Turning()
+    //{
+    //    Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+    //    RaycastHit floorHit;
+    //    if (Physics.Raycast(camRay, out floorHit, camRayLength, floorMask))
+    //    {
+    //        Vector3 playerToMouse = floorHit.point - transform.position;
+    //        playerToMouse.y = 0f;
+    //        Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
+    //        playerRigidbody.MoveRotation(newRotation);
+    //    }
+    //}
+
+
+    public float GetAim(Vector2 from, Vector2 to)
+    {
+        float dx = to.x - from.x;
+        float dy = to.y - from.y;
+        float rad = Mathf.Atan2(dy,dx);
+
+        return rad * Mathf.Rad2Deg;
+    }
+=======
+>>>>>>> 9e5cefa51671b1c8f95f91fd4205141f438e5743
 }
