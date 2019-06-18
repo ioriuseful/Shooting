@@ -60,10 +60,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BulletMove.cs" />
+    <Compile Include="Assets\Bullet\BulletMove.cs" />
+    <Compile Include="Assets\Bullet\Enemyshoot.cs" />
+    <Compile Include="Assets\Bullet\Homingbulletmove.cs" />
     <Compile Include="Assets\EnemyHealth.cs" />
-    <Compile Include="Assets\Enemyshoot.cs" />
+    <Compile Include="Assets\Enemyhomingshoot.cs" />
+    <Compile Include="Assets\Enemymove.cs" />
     <Compile Include="Assets\move.cs" />
+    <Compile Include="Assets\PlayerShooting.cs" />
+    <Compile Include="Assets\Randumbulletmove.cs" />
     <Compile Include="Assets\ScoreUI.cs" />
     <Compile Include="Assets\Script\EndButton.cs" />
     <Compile Include="Assets\Script\FollowPlayer.cs" />

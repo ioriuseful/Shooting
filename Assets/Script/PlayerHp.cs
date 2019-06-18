@@ -26,27 +26,11 @@ public class PlayerHp : MonoBehaviour
         if(hpbar<=0)
         {
             stock -= 1;
-<<<<<<< HEAD
             hpbar = 100;
 
            // UnityEditor.EditorApplication.isPlaying = false;
         }
         if(stock <=0)
-=======
-<<<<<<< HEAD
-            if(stock>=0)
-            {
-                hpbar = 100;
-            }
-=======
-            hpbar = 100;
-            healthSilider.value = hpbar;
-
-            // UnityEditor.EditorApplication.isPlaying = false;
->>>>>>> df249669d7dd23ef43d175c9117e1d542f800cfa
-        }
-        if(stock <0)
->>>>>>> 3e381c94ae779846431019d9f761440d17f2cffa
         {
             Death();
         }
