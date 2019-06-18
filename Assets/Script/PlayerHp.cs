@@ -11,7 +11,6 @@ public class PlayerHp : MonoBehaviour
     public Slider healthSilider;//HPbarUI
 
 
-
     bool isDead;
 
     // Start is called before the first frame update
@@ -23,24 +22,14 @@ public class PlayerHp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-<<<<<<< HEAD
         //Debug.Log(hpbar);
         if(hpbar<=0)
-        {
-            stock -= 1;
-            hpbar = 100;
-
-           // UnityEditor.EditorApplication.isPlaying = false;
-=======
-        Debug.Log(hpbar);
-        if(hpbar<1)
         {
             stock -= 1;
             hpbar = 100;
             healthSilider.value = hpbar;
 
             // UnityEditor.EditorApplication.isPlaying = false;
->>>>>>> 9e5cefa51671b1c8f95f91fd4205141f438e5743
         }
         if(stock <=0)
         {
@@ -61,10 +50,9 @@ public class PlayerHp : MonoBehaviour
         }
         if(enemy.gameObject.tag=="Item")
         {
-            hpbar += 40;
+            hpbar += 20;
             healthSilider.value = hpbar;
         }
-
     }
     void Death()
     {

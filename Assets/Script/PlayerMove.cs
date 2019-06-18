@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+
     public float speed;
     Vector3 movement;
     Rigidbody playerRigidbody;
-<<<<<<< HEAD
 
     Plane plane = new Plane();
     float distance = 0;
@@ -15,8 +15,6 @@ public class PlayerMove : MonoBehaviour
     //float camRayLength = 100f;
 
 
-=======
->>>>>>> 9e5cefa51671b1c8f95f91fd4205141f438e5743
     // Start is called before the first frame update
     void Start()
     {   
@@ -29,7 +27,6 @@ public class PlayerMove : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
         PlayerMovement(h, v);
-<<<<<<< HEAD
 
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         plane.SetNormalAndPosition(Vector3.up, transform.localPosition);
@@ -46,9 +43,6 @@ public class PlayerMove : MonoBehaviour
         //transform.SetLocalEulerAnglesY(-angle + 90);
 
 
-=======
-       
->>>>>>> 9e5cefa51671b1c8f95f91fd4205141f438e5743
     }
     void PlayerMovement(float h, float v)
     {
@@ -56,7 +50,6 @@ public class PlayerMove : MonoBehaviour
         movement = movement.normalized * speed * Time.deltaTime;
         playerRigidbody.MovePosition(transform.position + movement);
     }
-<<<<<<< HEAD
 
     //void Turning()
     //{
@@ -80,6 +73,4 @@ public class PlayerMove : MonoBehaviour
 
         return rad * Mathf.Rad2Deg;
     }
-=======
->>>>>>> 9e5cefa51671b1c8f95f91fd4205141f438e5743
 }
