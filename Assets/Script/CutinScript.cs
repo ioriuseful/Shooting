@@ -12,7 +12,7 @@ public class CutinScript : MonoBehaviour
     bool des;
 
     [SerializeField]
-    private float interval = 10f;
+    private float interval = 4f;
     [SerializeField]
     private float tmpTime = 0;
 
