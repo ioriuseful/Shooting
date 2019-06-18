@@ -5,7 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ene1
+<<<<<<< HEAD
   - Enemy
+=======
+  - Spawn
+>>>>>>> 0601003048537bfbbd9798aef6236f1b62d8837f
   layers:
   - Default
   - TransparentFX

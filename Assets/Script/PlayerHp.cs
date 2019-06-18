@@ -6,9 +6,10 @@ using UnityEngine.UI;
 
 public class PlayerHp : MonoBehaviour
 {
-    private int hpbar;//HPバー
+    public int hpbar;//HPバー
     public int stock;//残機
     public Slider healthSilider;//HPbarUI
+
 
 
     bool isDead;
@@ -23,12 +24,18 @@ public class PlayerHp : MonoBehaviour
     void Update()
     {
         Debug.Log(hpbar);
-        if(hpbar<=0)
+        if(hpbar<1)
         {
             stock -= 1;
             hpbar = 100;
+<<<<<<< HEAD
 
            // UnityEditor.EditorApplication.isPlaying = false;
+=======
+            healthSilider.value = hpbar;
+
+            // UnityEditor.EditorApplication.isPlaying = false;
+>>>>>>> 0601003048537bfbbd9798aef6236f1b62d8837f
         }
         if(stock <=0)
         {
