@@ -20,7 +20,7 @@ public class BulletMove : MonoBehaviour
     //    bulletposition = bullet.position;
     //    velocity = (playerposition - bulletposition).normalized * 0.3f;//正規化して直線の速度に
     //}
-
+    
     void Start()
     {
         //rigidbody = GetComponent<Rigidbody>();
@@ -41,13 +41,13 @@ public class BulletMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        bullet.position = (bulletposition += velocity);
+       bullet.position = (bulletposition += velocity);
         deathCount++;
         if (deathCount >= 600)
         {
             Destroy(gameObject);
         }
-
+      
     }
     void OnCollisionEnter(Collision player)
     {

@@ -33,6 +33,7 @@ public class Enemyshoot : MonoBehaviour
         {
             bulletspawn = 90;
             Instantiate(bullet, enemyTrans.position,enemyTrans.rotation);
+           
         }
     }
 }

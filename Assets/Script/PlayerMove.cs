@@ -19,10 +19,7 @@ public class PlayerMove : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
         PlayerMovement(h, v);
-<<<<<<< HEAD
-=======
        
->>>>>>> 0601003048537bfbbd9798aef6236f1b62d8837f
     }
     void PlayerMovement(float h, float v)
     {
