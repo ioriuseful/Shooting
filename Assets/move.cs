@@ -27,7 +27,7 @@ public class move : MonoBehaviour
         if (transform.position.x <= -5)
         {
             velocity.x = 0.1f;
-            }
+        }
         //else
         //{
         //    rigidbody.MovePosition(transform.position + new Vector3(-0.1f, 0, 0));

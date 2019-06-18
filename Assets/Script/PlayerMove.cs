@@ -8,19 +8,17 @@ public class PlayerMove : MonoBehaviour
     public float speed;
     Vector3 movement;
     Rigidbody playerRigidbody;
-<<<<<<< HEAD
-=======
-    int floorMask;
-    float camRayLength = 100f;
->>>>>>> 3e381c94ae779846431019d9f761440d17f2cffa
+
+    Plane plane = new Plane();
+    float distance = 0;
+    //int floorMask;
+    //float camRayLength = 100f;
+
+
     // Start is called before the first frame update
     void Start()
     {   
         playerRigidbody = GetComponent<Rigidbody>();
-<<<<<<< HEAD
-=======
-        floorMask = LayerMask.GetMask("Floor");
->>>>>>> 3e381c94ae779846431019d9f761440d17f2cffa
     }
 
     // Update is called once per frame
@@ -29,10 +27,22 @@ public class PlayerMove : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
         PlayerMovement(h, v);
-<<<<<<< HEAD
-=======
-        Turning();
->>>>>>> 3e381c94ae779846431019d9f761440d17f2cffa
+
+        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        plane.SetNormalAndPosition(Vector3.up, transform.localPosition);
+        if(plane.Raycast(ray,out distance))
+        {
+            var lookPoint = ray.GetPoint(distance);
+            transform.LookAt(lookPoint);
+        }
+
+        //var screenPos = Camera.main.WorldToScreenPoint(transform.position);
+        //var direction = Input.mousePosition - screenPos;
+
+        //var angle = GetAim(Vector3.zero, direction);
+        //transform.SetLocalEulerAnglesY(-angle + 90);
+
+
     }
     void PlayerMovement(float h, float v)
     {
@@ -40,19 +50,27 @@ public class PlayerMove : MonoBehaviour
         movement = movement.normalized * speed * Time.deltaTime;
         playerRigidbody.MovePosition(transform.position + movement);
     }
-<<<<<<< HEAD
-=======
-    void Turning()
+
+    //void Turning()
+    //{
+    //    Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+    //    RaycastHit floorHit;
+    //    if (Physics.Raycast(camRay, out floorHit, camRayLength, floorMask))
+    //    {
+    //        Vector3 playerToMouse = floorHit.point - transform.position;
+    //        playerToMouse.y = 0f;
+    //        Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
+    //        playerRigidbody.MoveRotation(newRotation);
+    //    }
+    //}
+
+
+    public float GetAim(Vector2 from, Vector2 to)
     {
-        Ray camRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit floorHit;
-        if (Physics.Raycast(camRay, out floorHit, camRayLength, floorMask))
-        {
-            Vector3 playerToMouse = floorHit.point - transform.position;
-            playerToMouse.y = 0f;
-            Quaternion newRotation = Quaternion.LookRotation(playerToMouse);
-            playerRigidbody.MoveRotation(newRotation);
-        }
+        float dx = to.x - from.x;
+        float dy = to.y - from.y;
+        float rad = Mathf.Atan2(dy,dx);
+
+        return rad * Mathf.Rad2Deg;
     }
->>>>>>> 3e381c94ae779846431019d9f761440d17f2cffa
 }

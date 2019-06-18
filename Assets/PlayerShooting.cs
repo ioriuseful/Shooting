@@ -31,7 +31,7 @@ public class PlayerShooting : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if (Input.GetButton("Fire1") && timer >= timeBetweenBullets && Time.timeScale != 0)
+        if (Input.GetKeyDown("e") && timer >= timeBetweenBullets && Time.timeScale != 0)
         {
             Shoot();
         }
@@ -55,7 +55,7 @@ public class PlayerShooting : MonoBehaviour
 
         timer = 0f;
 
-        
+
 
         gunLight.enabled = true;
 
