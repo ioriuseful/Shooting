@@ -11,7 +11,6 @@ public class PlayerHp : MonoBehaviour
     public Slider healthSilider;//HPbarUI
 
 
-
     bool isDead;
 
     // Start is called before the first frame update
@@ -24,18 +23,12 @@ public class PlayerHp : MonoBehaviour
     void Update()
     {
         Debug.Log(hpbar);
-        if(hpbar<1)
+        if(hpbar<=0)
         {
             stock -= 1;
             hpbar = 100;
-<<<<<<< HEAD
 
            // UnityEditor.EditorApplication.isPlaying = false;
-=======
-            healthSilider.value = hpbar;
-
-            // UnityEditor.EditorApplication.isPlaying = false;
->>>>>>> 0601003048537bfbbd9798aef6236f1b62d8837f
         }
         if(stock <=0)
         {

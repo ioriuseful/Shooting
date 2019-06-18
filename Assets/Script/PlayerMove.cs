@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
+
     public float speed;
-    Vector3 movement;
+    public Vector3 movement;
     Rigidbody playerRigidbody;
     // Start is called before the first frame update
     void Start()
@@ -19,15 +20,15 @@ public class PlayerMove : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
         PlayerMovement(h, v);
-<<<<<<< HEAD
-=======
-       
->>>>>>> 0601003048537bfbbd9798aef6236f1b62d8837f
     }
     void PlayerMovement(float h, float v)
     {
         movement.Set(h, 0, v);
         movement = movement.normalized * speed * Time.deltaTime;
         playerRigidbody.MovePosition(transform.position + movement);
+    }
+    public Vector3 returnmovement()
+    {
+        return movement;
     }
 }

@@ -12,16 +12,16 @@ public class Enemyshoot : MonoBehaviour
     Transform enemyTrans;
     LineRenderer line;
     Light shootLight;
-    float bulletspawn;
-    public Enemyshoot()
-    {
-        bulletspawn = 90;
-    }
+    public float bulletspawn;
+    float spawntime;
+    
     void Start()
     {
         // line = GetComponent<LineRenderer>();
 
         //  shootLight = GetComponent<Light>();
+
+        spawntime = bulletspawn;
         enemyTrans = GetComponent<Transform>();
     }
 
@@ -31,7 +31,7 @@ public class Enemyshoot : MonoBehaviour
         bulletspawn--;
         if (bulletspawn <= 0)
         {
-            bulletspawn = 90;
+            bulletspawn = spawntime;
             Instantiate(bullet, enemyTrans.position,enemyTrans.rotation);
            
         }
