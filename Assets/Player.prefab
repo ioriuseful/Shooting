@@ -1,6 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< HEAD
 --- !u!1 &1265584023540833489
 GameObject:
   m_ObjectHideFlags: 0
@@ -4866,9 +4865,6 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
 --- !u!1 &4739924491416389157
-=======
---- !u!1 &5789335267893855433
->>>>>>> 9e5cefa51671b1c8f95f91fd4205141f438e5743
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4900,12 +4896,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.2200012, y: 1.7000008, z: 3.2000122}
   m_LocalScale: {x: 1, y: 1, z: 1}
-<<<<<<< HEAD
   m_Children:
   - {fileID: 5024909773280305371}
-=======
-  m_Children: []
->>>>>>> 9e5cefa51671b1c8f95f91fd4205141f438e5743
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4992,14 +4984,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a10f0226e26f560429bd922861fa6187, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   stock: 3
   healthSilider: {fileID: 0}
 --- !u!54 &436245435233014820
-=======
-  stock: 0
---- !u!54 &1701686794020132552
->>>>>>> 9e5cefa51671b1c8f95f91fd4205141f438e5743
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
