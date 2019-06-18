@@ -36,6 +36,10 @@ public class PlayerHp : MonoBehaviour
         {
             Death();
         }
+        if(hpbar>100)
+        {
+            hpbar = 100;
+        }
     }
 
     void OnCollisionEnter(Collision enemy)
@@ -43,6 +47,11 @@ public class PlayerHp : MonoBehaviour
         if(enemy.gameObject.tag == "Ene1")
         {
             hpbar -= 20;
+            healthSilider.value = hpbar;
+        }
+        if(enemy.gameObject.tag=="Item")
+        {
+            hpbar += 40;
             healthSilider.value = hpbar;
         }
 
