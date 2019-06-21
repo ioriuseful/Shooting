@@ -22,14 +22,40 @@ public class PlayerHp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        Debug.Log(hpbar);
+=======
+<<<<<<< HEAD
+>>>>>>> 4cb7c7f919b2e76f87a16fa92477e1c32addf84f
         //Debug.Log(hpbar);
+>>>>>>> 5a7f381d21d2c9ead2691c2660d8271d7a2a6639
         if(hpbar<=0)
+        {
+            stock -= 1;
+            hpbar = 100;
+<<<<<<< HEAD
+            healthSilider.value = hpbar;
+
+            // UnityEditor.EditorApplication.isPlaying = false;
+=======
+
+           // UnityEditor.EditorApplication.isPlaying = false;
+<<<<<<< HEAD
+=======
+=======
+        Debug.Log(hpbar);
+        if(hpbar<1)
         {
             stock -= 1;
             hpbar = 100;
             healthSilider.value = hpbar;
 
             // UnityEditor.EditorApplication.isPlaying = false;
+>>>>>>> 9e5cefa51671b1c8f95f91fd4205141f438e5743
+>>>>>>> 5a7f381d21d2c9ead2691c2660d8271d7a2a6639
+>>>>>>> 4cb7c7f919b2e76f87a16fa92477e1c32addf84f
         }
         if(stock <=0)
         {
@@ -50,9 +76,16 @@ public class PlayerHp : MonoBehaviour
         }
         if(enemy.gameObject.tag=="Item")
         {
+<<<<<<< HEAD
             hpbar += 20;
             healthSilider.value = hpbar;
         }
+=======
+            hpbar += 40;
+            healthSilider.value = hpbar;
+        }
+
+>>>>>>> 4cb7c7f919b2e76f87a16fa92477e1c32addf84f
     }
     void Death()
     {

@@ -6,7 +6,7 @@ public class PlayerMove : MonoBehaviour
 {
 
     public float speed;
-    Vector3 movement;
+    public Vector3 movement;
     Rigidbody playerRigidbody;
 
     Plane plane = new Plane();
@@ -27,6 +27,12 @@ public class PlayerMove : MonoBehaviour
         float h = Input.GetAxisRaw("Horizontal");
         float v = Input.GetAxisRaw("Vertical");
         PlayerMovement(h, v);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 4cb7c7f919b2e76f87a16fa92477e1c32addf84f
 
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         plane.SetNormalAndPosition(Vector3.up, transform.localPosition);
@@ -43,6 +49,13 @@ public class PlayerMove : MonoBehaviour
         //transform.SetLocalEulerAnglesY(-angle + 90);
 
 
+<<<<<<< HEAD
+=======
+=======
+       
+>>>>>>> 9e5cefa51671b1c8f95f91fd4205141f438e5743
+>>>>>>> 5a7f381d21d2c9ead2691c2660d8271d7a2a6639
+>>>>>>> 4cb7c7f919b2e76f87a16fa92477e1c32addf84f
     }
     void PlayerMovement(float h, float v)
     {
@@ -50,6 +63,16 @@ public class PlayerMove : MonoBehaviour
         movement = movement.normalized * speed * Time.deltaTime;
         playerRigidbody.MovePosition(transform.position + movement);
     }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    public Vector3 returnmovement()
+    {
+        return movement;
+    }
+=======
+<<<<<<< HEAD
+>>>>>>> 4cb7c7f919b2e76f87a16fa92477e1c32addf84f
 
     //void Turning()
     //{
@@ -73,4 +96,10 @@ public class PlayerMove : MonoBehaviour
 
         return rad * Mathf.Rad2Deg;
     }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 9e5cefa51671b1c8f95f91fd4205141f438e5743
+>>>>>>> 5a7f381d21d2c9ead2691c2660d8271d7a2a6639
+>>>>>>> 4cb7c7f919b2e76f87a16fa92477e1c32addf84f
 }
