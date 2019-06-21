@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8992401015293703008}
   - component: {fileID: 8992401015293703009}
   - component: {fileID: 8992401015293703010}
-  - component: {fileID: 7117128712890666713}
+  - component: {fileID: 7734348213175158351}
   m_Layer: 0
   m_Name: Enemyhensabullet
   m_TagString: Ene1
@@ -132,7 +132,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7117128712890666713
+--- !u!114 &7734348213175158351
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8992401015293703020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cd86df6f2c3835458ed840c3eedb5c8, type: 3}
+  m_Script: {fileID: 11500000, guid: bfcc79390fe0bc14a9d709f5f458c7a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.3

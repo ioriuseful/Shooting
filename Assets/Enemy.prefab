@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 6490535238479659102}
   - component: {fileID: 6490535238479659090}
   - component: {fileID: 6490535238479659093}
-  - component: {fileID: 6490535238479659092}
   - component: {fileID: 6490535238479659094}
+  - component: {fileID: 6100222313267525297}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -126,19 +126,6 @@ MonoBehaviour:
   limithp: 0
   currenthp: 0
   damage: 0
---- !u!114 &6490535238479659092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6490535238479659101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 210f763953bdf1e409c3cd533cbc2ec8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 3808493773422087231, guid: f0bb0b8ee9d5e164193c1394e2d2ce02, type: 3}
 --- !u!195 &6490535238479659094
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -161,3 +148,17 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &6100222313267525297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6490535238479659101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa6d773ebf066c499ddaf85657c4e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 3093760118029506227, guid: 2b6ad4d906533304a8fb0bbcd5b37de8, type: 3}
+  bulletspawn: 90

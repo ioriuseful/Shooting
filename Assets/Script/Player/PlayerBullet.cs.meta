@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Script/Enemyshoot.cs.meta
+guid: 637d5c0eb30d4fb4bb6b1317ac74fd3a
+=======
+guid: 449a7caa19a19d947aae65c38b1d0071
+>>>>>>> 5a7f381d21d2c9ead2691c2660d8271d7a2a6639:Assets/PlayerBullet.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

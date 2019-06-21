@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8517764763991978052
+--- !u!1 &5042550192412516444
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5996857376926041780}
-  - component: {fileID: 2872889876046646321}
-  - component: {fileID: 7440321173261058261}
-  - component: {fileID: 1186356366611332335}
-  - component: {fileID: 2129024921543723357}
-  - component: {fileID: 4477928748795244420}
+  - component: {fileID: 6986929378875430572}
+  - component: {fileID: 1445971437345332265}
+  - component: {fileID: 6093024968814940365}
+  - component: {fileID: 2574187166995574007}
+  - component: {fileID: 3333861781160761669}
+  - component: {fileID: 1205728565098086028}
   m_Layer: 0
   m_Name: Pbullet
   m_TagString: Untagged
@@ -21,35 +21,35 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5996857376926041780
+--- !u!4 &6986929378875430572
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8517764763991978052}
+  m_GameObject: {fileID: 5042550192412516444}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2200012, y: 1.7000008, z: 4.078}
+  m_LocalPosition: {x: -401.0777, y: -60.21593, z: -478.65408}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2872889876046646321
+--- !u!33 &1445971437345332265
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8517764763991978052}
+  m_GameObject: {fileID: 5042550192412516444}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &7440321173261058261
+--- !u!23 &6093024968814940365
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8517764763991978052}
+  m_GameObject: {fileID: 5042550192412516444}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -80,26 +80,26 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &1186356366611332335
+--- !u!135 &2574187166995574007
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8517764763991978052}
+  m_GameObject: {fileID: 5042550192412516444}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &2129024921543723357
+--- !u!54 &3333861781160761669
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8517764763991978052}
+  m_GameObject: {fileID: 5042550192412516444}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -109,17 +109,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 0
---- !u!114 &4477928748795244420
+--- !u!114 &1205728565098086028
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8517764763991978052}
+  m_GameObject: {fileID: 5042550192412516444}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 373baa1c17ebe434ea8ed785904592c8, type: 3}
+  m_Script: {fileID: 11500000, guid: 96a25fc88c583a1459409b24d395796d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 5789335267893855433, guid: aec916dcbd3261d4db2c359eea077dfc, type: 3}
-  pbullet: {fileID: 8517764763991978052}
+  player: {fileID: 5744497166690054007, guid: 2334f07ccc7038c4c94e1d67cb63ba90, type: 3}
+  pbullet: {fileID: 5042550192412516444}
