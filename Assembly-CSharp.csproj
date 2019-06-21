@@ -9,17 +9,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-<<<<<<< HEAD
     <RootNamespace>
     </RootNamespace>
-=======
-    <RootNamespace></RootNamespace>
-<<<<<<< HEAD
-    <ProjectGuid>{3B31CF04-5283-D2E3-FCEB-36DC69AACDD8}</ProjectGuid>
-=======
->>>>>>> 3ffdce29c5c33f2bf8a752a2c0676da2e3dc4f87
     <ProjectGuid>{7CF1F33E-A859-9D01-4F58-76470CD3E24C}</ProjectGuid>
->>>>>>> 9e5cefa51671b1c8f95f91fd4205141f438e5743
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -66,27 +58,29 @@
     <Compile Include="Assets\Bullet\BulletMove.cs" />
     <Compile Include="Assets\Bullet\Enemyshoot.cs" />
     <Compile Include="Assets\Bullet\Homingbulletmove.cs" />
-    <Compile Include="Assets\Enemyhomingshoot.cs" />
-    <Compile Include="Assets\Enemymove.cs" />
-    <Compile Include="Assets\PbulletScript.cs" />
-    <Compile Include="Assets\PlayerBullet.cs" />
-    <Compile Include="Assets\Randumbulletmove.cs" />
     <Compile Include="Assets\Script\CutinScript.cs" />
     <Compile Include="Assets\Script\Emitter.cs" />
     <Compile Include="Assets\Script\EndButton.cs" />
     <Compile Include="Assets\Script\EnemyHealth.cs" />
+    <Compile Include="Assets\Script\Enemyhomingshoot.cs" />
     <Compile Include="Assets\Script\EnemyManager.cs" />
+    <Compile Include="Assets\Script\Enemymove.cs" />
     <Compile Include="Assets\Script\FollowPlayer.cs" />
     <Compile Include="Assets\Script\GamePlayShift.cs" />
     <Compile Include="Assets\Script\GameStart.cs" />
     <Compile Include="Assets\Script\Item.cs" />
     <Compile Include="Assets\Script\move.cs" />
     <Compile Include="Assets\Script\PauseScript.cs" />
+    <Compile Include="Assets\Script\PbulletScript.cs" />
+    <Compile Include="Assets\Script\PlayerBullet.cs" />
     <Compile Include="Assets\Script\PlayerHp.cs" />
     <Compile Include="Assets\Script\PlayerMove.cs" />
     <Compile Include="Assets\Script\PlayerShooting.cs" />
+    <Compile Include="Assets\Script\PlayerUpdate.cs" />
+    <Compile Include="Assets\Script\Randumbulletmove.cs" />
     <Compile Include="Assets\Script\ScoreManager.cs" />
     <Compile Include="Assets\Script\ScoreUI.cs" />
+    <Compile Include="Assets\Script\SliderManger.cs" />
     <Compile Include="Assets\Script\TitleShift.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/alcor/Desktop/Shooting/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

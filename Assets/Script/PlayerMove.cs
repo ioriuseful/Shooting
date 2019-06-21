@@ -30,19 +30,11 @@ public class PlayerMove : MonoBehaviour
 
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         plane.SetNormalAndPosition(Vector3.up, transform.localPosition);
-        if(plane.Raycast(ray,out distance))
+        if (plane.Raycast(ray, out distance))
         {
             var lookPoint = ray.GetPoint(distance);
             transform.LookAt(lookPoint);
         }
-
-        //var screenPos = Camera.main.WorldToScreenPoint(transform.position);
-        //var direction = Input.mousePosition - screenPos;
-
-        //var angle = GetAim(Vector3.zero, direction);
-        //transform.SetLocalEulerAnglesY(-angle + 90);
-
-
     }
     void PlayerMovement(float h, float v)
     {
@@ -72,5 +64,19 @@ public class PlayerMove : MonoBehaviour
         float rad = Mathf.Atan2(dy,dx);
 
         return rad * Mathf.Rad2Deg;
+    }
+    public void Mup()
+    {
+        float h = Input.GetAxisRaw("Horizontal");
+        float v = Input.GetAxisRaw("Vertical");
+        PlayerMovement(h, v);
+
+        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        plane.SetNormalAndPosition(Vector3.up, transform.localPosition);
+        if (plane.Raycast(ray, out distance))
+        {
+            var lookPoint = ray.GetPoint(distance);
+            transform.LookAt(lookPoint);
+        }
     }
 }
