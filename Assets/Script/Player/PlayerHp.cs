@@ -47,7 +47,7 @@ public class PlayerHp : MonoBehaviour
                 {
                     hpbar = 100;
                 }
-                slM.SliderUp();
+             //   slM.SliderUp();
             
         
     }

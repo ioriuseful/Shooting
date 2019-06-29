@@ -16,21 +16,33 @@ public class CutinScript : MonoBehaviour
     [SerializeField]
     private float tmpTime = 0;
 
+    BomScript bom;
+    int bcount;
+    int tim=0;
+
+
+
+    GameObject player;
+
     // Start is called before the first frame update
     void Start()
     {
         des = false;
+        player = GameObject.FindGameObjectWithTag("Player");
+        bom = player.GetComponent<BomScript>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("p"))
+        bcount = bom.GetBomStayt();
+
+        if (bcount==1 && tim==0)
         {
             CutinStart();
-            Debug.Log("panpa-su");
-            
+            Debug.Log(bcount);
         }
+
         if(des)
         {
             tmpTime += Time.deltaTime;
@@ -42,17 +54,23 @@ public class CutinScript : MonoBehaviour
             }         
         }
 
+
     }
 
     public void CutinStart()
     {
-        catinInstance = GameObject.Instantiate(catinPrefab) as GameObject;
-        transform.parent = GameObject.Find("HUDCanvas 1").transform;
+        catinInstance = Instantiate(catinPrefab) as GameObject;
         des = true;
+        tim = 1;
     }
 
     public void Stop()
     {
         Destroy(catinInstance);
+        tim = 0;
+    }
+    public float Reget()
+    {
+        return interval;
     }
 }

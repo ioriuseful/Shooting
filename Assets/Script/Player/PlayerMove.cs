@@ -13,12 +13,27 @@ public class PlayerMove : MonoBehaviour
     float distance = 0;
     //int floorMask;
     //float camRayLength = 100f;
+    bool avoid = false;
+    int avoidcheck = 1;
+    float speedReset;
 
+    [SerializeField] private GameObject playerObject;
+    [SerializeField] private GameObject playerCube;
+
+    //連続使用制限
+    [SerializeField]
+    private float interval = 3f;
+    [SerializeField]
+    private float tmpTime = 0;
+
+    bool re;
 
     // Start is called before the first frame update
     void Start()
     {   
         playerRigidbody = GetComponent<Rigidbody>();
+        speedReset = speed;
+        re = false;
     }
 
     // Update is called once per frame
@@ -32,7 +47,35 @@ public class PlayerMove : MonoBehaviour
         float v = Input.GetAxisRaw("Vertical");
         PlayerMovement(h, v);
 
+        if (avoid)
+        {
+            speed *= 1.2f;
+            Invoke("Asd", 0.2f);
+            Invoke("LayerReset", 0.4f);
 
+        }
+        else
+        {
+            speed = speedReset;
+        }
+        if (re)
+        {
+            tmpTime += Time.deltaTime;
+            if (tmpTime >= interval)
+            {
+                tmpTime = 0;
+                re = false;
+            }
+        }
+        if (!re)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                SetLayer(14);
+                avoid = true;
+                re = true;
+            }
+        }
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         plane.SetNormalAndPosition(Vector3.up, transform.localPosition);
         if (plane.Raycast(ray, out distance))
@@ -93,4 +136,26 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
+    void Asd()
+    {
+        avoid = false;
+    }
+
+    void LayerReset()
+    {
+        SetLayer(8);
+    }
+    public void SetLayer(int layerNumber)
+    {
+        playerObject.layer = layerNumber;
+        playerCube.layer = layerNumber;
+    }
+    public float Reget()
+    {
+        return tmpTime;
+    }
+    public float Rebar()
+    {
+        return interval;
+    }
 }

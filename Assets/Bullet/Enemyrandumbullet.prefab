@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3997623211362750953}
   - component: {fileID: 3997623211362750954}
   - component: {fileID: 7905016566276924822}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Enemyrandumbullet
   m_TagString: Ene1
   m_Icon: {fileID: 0}

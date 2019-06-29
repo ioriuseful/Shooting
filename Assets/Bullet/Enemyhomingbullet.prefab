@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2639609407199528380}
   - component: {fileID: 2639609407199528383}
   - component: {fileID: 2639609407199528382}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Enemyhomingbullet
   m_TagString: Ene1
   m_Icon: {fileID: 0}

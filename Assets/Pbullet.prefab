@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1205728565098086028}
   m_Layer: 0
   m_Name: Pbullet
-  m_TagString: Untagged
+  m_TagString: Pbullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,5 +121,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a25fc88c583a1459409b24d395796d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 5744497166690054007, guid: 2334f07ccc7038c4c94e1d67cb63ba90, type: 3}
+  player: {fileID: 8359596108065894953, guid: f9fce962f54632943b8d998d7d1b1cb3, type: 3}
   pbullet: {fileID: 5042550192412516444}
+  damage: 25

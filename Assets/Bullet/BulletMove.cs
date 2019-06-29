@@ -55,6 +55,10 @@ public class BulletMove : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        if(player.gameObject.tag == "Bom")
+        {
+            Destroy(gameObject);
+        }
 
     }
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerBullet : MonoBehaviour
 {
+
+    //Pbullet(通常弾)を打ち出す
     public GameObject Pbullet;
     public float speed = 500;
     public Transform muzzle;
@@ -28,6 +30,7 @@ public class PlayerBullet : MonoBehaviour
         //transform.Translate(0, 0, speed);
     }
 
+    //弾撃つやつ
     void Shot()
     {
 
@@ -47,13 +50,13 @@ public class PlayerBullet : MonoBehaviour
         ////pbullet.transform.position = transform.position;
     }
 
-    void OnCollisionEnter(Collision enemy)
-    {
-        if (enemy.gameObject.tag == "Ene1")
-        {
-            Destroy(gameObject);
-            Debug.Log("aaaaa");
-        }
+    //void OnCollisionEnter(Collision enemy)
+    //{
+    //    if (enemy.gameObject.tag == "Ene1")
+    //    {
+    //        Destroy(gameObject);
+    //        Debug.Log("aaaaa");
+    //    }
 
-    }
+    //}
 }

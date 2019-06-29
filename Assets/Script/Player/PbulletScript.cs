@@ -13,7 +13,7 @@ public class PbulletScript : MonoBehaviour
 
     public GameObject player;
     public GameObject pbullet;
-
+    public float damage;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +29,7 @@ public class PbulletScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //プレイヤーとPbulletの距離を測って35になったら弾を消す
         Vector3 Apos = player.transform.position;
         Vector3 Bpos = pbullet.transform.position;
         float dis = Vector3.Distance(Apos, Bpos);
@@ -48,7 +49,15 @@ public class PbulletScript : MonoBehaviour
             Destroy(gameObject);
             //Debug.Log("aaaaa");
         }
+        if (enemy.gameObject.tag == "Wall")
+        {
+            Debug.Log("aaaaaaawaaaaaaawwwwwwww");
+            Destroy(gameObject);
+        }
 
-
+    }
+    public float returndamage()
+    {
+        return damage;
     }
 }

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8992401015293703009}
   - component: {fileID: 8992401015293703010}
   - component: {fileID: 7734348213175158351}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Enemyhensabullet
   m_TagString: Ene1
   m_Icon: {fileID: 0}
